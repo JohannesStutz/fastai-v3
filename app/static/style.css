@@ -1,6 +1,6 @@
 body {
     background-color: #d3ffd7;
-    font: 20px Candara, Tahoma, sans-serif;
+    font: 20px sans-serif;
 }
 
 .no-display {
@@ -16,6 +16,7 @@ body {
 
 .title {
     font-size: 30px;
+    font-family: Candara, Tahoma;
     margin-top: 1em;
     margin-bottom: 1em;
     color: #262626;
@@ -38,6 +39,7 @@ body {
     margin-top: 0.5em;
     padding: 10px;
     font-size: 24px;
+    font-family: Candara, Tahoma;
 }
 
 button.choose-file-button {
