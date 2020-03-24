@@ -60,7 +60,7 @@ async def analyze(request):
     img_data = await request.form()
     img_bytes = await (img_data['file'].read())
     img = open_image(BytesIO(img_bytes))
-    img.resize((224, 224)).refresh()
+    img.resize(torch.Size([img.shape[0],224, 224]))
     prediction = learn.predict(img)[0]
     return JSONResponse({'result': str(prediction)})
 
